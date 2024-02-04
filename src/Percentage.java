@@ -11,5 +11,4 @@ public class Percentage {
         float Percentage = ((float) obtained_marks / total_marks) * 100;
         System.out.println("Your percentage is " + Percentage + " ! ");
     }
-
 }
