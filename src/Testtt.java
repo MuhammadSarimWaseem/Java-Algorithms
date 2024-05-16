@@ -181,9 +181,14 @@ public class Testtt {
     public static void main(String[] args) {
         System.out.println("main1");
         Testtt a = new Testtt();
+        System.out.println("main2");
     }
 
     static {
         System.out.println("static2");
+    }
+
+    static {
+        System.out.println("static3");
     }
 }
