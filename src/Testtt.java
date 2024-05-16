@@ -115,35 +115,75 @@
 //     }
 // }
 
-class Testtt {
+// public class Testtt {
+//     public static void main(String[] args) {
+//         Circlee circle1 = new Circlee(1);
+//         Circlee circle2 = new Circlee(2);
+//         swap1(circle1, circle2);
+//         System.out.println("After swap1: circle1 = " +
+//                 circle1.radius + " circle2 = " + circle2.radius);
+//         swap2(circle1, circle2);
+//         System.out.println("After swap2: circle1 = " +
+//                 circle1.radius + " circle2 = " + circle2.radius);
+//     }
+
+//     public static void swap1(Circlee x, Circlee y) {
+//         Circlee temp = x;
+//         x = y;
+//         y = temp;
+//     }
+
+//     public static void swap2(Circlee x, Circlee y) {
+//         double temp = x.radius; //temp=1
+//         x.radius = y.radius;//x.r=2
+//         y.radius = temp;//y.r=1
+//     }
+// }
+
+// class Circlee {
+//     double radius;
+
+//     Circlee(double newRadius) {
+//         radius = newRadius;
+//     }
+// }
+
+// interface A{
+//     int i=111;
+// }
+// class B implements A{
+//     void methodB(){
+//         int i=222;
+//         System.out.println(i);
+//     }
+// }
+
+// public class Testtt {
+
+//     public static void main(String[] args) {
+//         B s=new B();
+//         System.out.println(s.i);
+//         s.methodB();
+
+//     }
+// }
+
+public class Testtt {
+
+    static {
+        System.out.println("static1");
+    }
+
+    public Testtt() {
+        System.out.println("public1");
+    }
+
     public static void main(String[] args) {
-        Circle circle1 = new Circle(1);
-        Circle circle2 = new Circle(2);
-        swap1(circle1, circle2);
-        System.out.println("After swap1: circle1 = " +
-                circle1.radius + " circle2 = " + circle2.radius);
-        swap2(circle1, circle2);
-        System.out.println("After swap2: circle1 = " +
-                circle1.radius + " circle2 = " + circle2.radius);
+        System.out.println("main1");
+        Testtt a = new Testtt();
     }
 
-    public static void swap1(Circle x, Circle y) {
-        Circle temp = x;
-        x = y;
-        y = temp;
-    }
-
-    public static void swap2(Circle x, Circle y) {
-        double temp = x.radius;
-        x.radius = y.radius;
-        y.radius = temp;
-    }
-}
-
-class Circle {
-    double radius;
-
-    Circle(double newRadius) {
-        radius = newRadius;
+    static {
+        System.out.println("static2");
     }
 }

@@ -6,7 +6,7 @@ public class Overrid {
 }
 
 class Student extends Person {
-    private String getInfo() {
+    public String getInfo() {
         return "Student";
     }
 }
