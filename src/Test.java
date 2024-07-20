@@ -49,16 +49,37 @@
 //     }
 // }
 
-public class Test {
-    private String text;
+// public class Test {
+//     private String text;
 
-    public Test(String s) {
-        this.text = s;
-        // String text =s;
-    }
+//     public Test(String s) {
+//         this.text = s;
+//         // String text =s;
+//     }
 
-    public static void main(String[] args) {
-        Test test = new Test("ABC");
-        System.out.println(test.text.toLowerCase());
-    }
-}
+//     public static void main(String[] args) {
+//         Test test = new Test("ABC");
+//         System.out.println(test.text.toLowerCase());
+//     }
+// }
+
+// public class Test {
+//     public static void main(String[] args) {
+//         As a = new As();
+//         a.p(10);
+//         a.p(10.0);
+//     }
+// }
+
+// class Bs {
+//     public void p(double i) {
+//         System.out.println(i * 2);
+//     }
+// }
+
+// class As extends Bs {
+//     // This method overrides the method in B
+//     public void p(double i) {
+//         System.out.println(i);
+//     }
+// }
